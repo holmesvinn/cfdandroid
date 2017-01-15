@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app_dev.aswin_sundar.trialtwo.MainActivity">
+
+    <Button
+        android:text="Reverse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/reverseButton"
+        android:layout_marginBottom="137dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/leftButton"
+        android:layout_marginEnd="17dp"
+        android:layout_above="@+id/reverseButton"
+        android:layout_toStartOf="@+id/reverseButton" />
+
+    <Button
+        android:text="Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rightButton"
+        android:layout_marginStart="15dp"
+        android:layout_above="@+id/reverseButton"
+        android:layout_toEndOf="@+id/reverseButton" />
+
+    <Button
+        android:text="Front"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frontButton"
+        android:layout_above="@+id/rightButton"
+        android:layout_alignStart="@+id/reverseButton" />
+
+    <TextView
+        android:text="No Action Initiated"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/leftButton"
+        android:layout_marginTop="64dp"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:id="@+id/actionTextView" />
+</RelativeLayout>
